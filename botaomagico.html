@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .button {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      padding: 10px 20px;
+      background-color: #337ab7;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+  <script>
+    function getRandomPosition() {
+      var screenWidth = window.innerWidth;
+      var screenHeight = window.innerHeight;
+
+      var margin = 100; // Defina a margem desejada (valor maior)
+
+      var randomX = Math.floor(Math.random() * (screenWidth - margin * 2)) + margin;
+      var randomY = Math.floor(Math.random() * (screenHeight - margin * 2)) + margin;
+
+      return { x: randomX, y: randomY };
+    }
+
+    function moveButton() {
+      var button = document.getElementById('myButton');
+      var randomPosition = getRandomPosition();
+
+      button.style.left = randomPosition.x + 'px';
+      button.style.top = randomPosition.y + 'px';
+    }
+  </script>
+</head>
+<body>
+  <button id="myButton" class="button" onmouseover="moveButton()">Meu Botão</button>
+</body>
+</html>
