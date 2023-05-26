@@ -1,15 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
     .button {
       position: absolute;
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
+      padding: 10px 20px;
+      background-color: #337ab7;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+
+    .static-button {
+      position: absolute;
+      left: 50%;
+      top: 40%;
+      transform: translateX(-50%);
       padding: 10px 20px;
       background-color: #337ab7;
       color: #fff;
@@ -40,6 +58,9 @@
   </script>
 </head>
 <body>
-  <button id="myButton" class="button" onmouseover="moveButton()">Meu Botão</button>
+  <div class="button-container">
+    <button class="static-button">Sim</button>
+    <button id="myButton" class="button" onmouseover="moveButton()">Meu Botão</button>
+  </div>
 </body>
 </html>
