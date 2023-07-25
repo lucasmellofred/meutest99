@@ -15,6 +15,17 @@
       background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(116,0,104,1) 100%);
     }
 
+    #caixaTexto {
+      font-size: 24px;
+      text-align: center;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding: 20px 0;
+      color: rgb(255, 255, 255);
+      font-family: sans-serif;
+    }
+
     .button {
       position: absolute;
       left: 50%;
@@ -25,6 +36,7 @@
       color: #000000;
       border: none;
       cursor: pointer;
+      border-radius: 6px;
     }
 
     .static-button {
@@ -37,6 +49,7 @@
       color: #000000;
       border: none;
       cursor: pointer;
+      border-radius: 6px;
     }
 
     .button-margin {
@@ -72,12 +85,16 @@
     }
 
     function showAlert() {
-      alert("Hehehe pode ja passando esse cu pra ca😁");
+      alert("Hehehe pode ja passando esse cu pra ca😁🍑");
     }
   </script>
 </head>
   
 <body>
+  <div id="caixaTexto">
+    <h1 class="top-text">Clique em algum dos botões</h1>
+  </div>
+  
   <div class="button-margin"></div>
   <div class="button-container">
     <button id="sim" class="static-button" onclick="showAlert()"><strong>Sim</strong></button>
