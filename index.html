@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <title>😁</title>
+  
   <style>
     body {
       margin: 0;
@@ -18,8 +20,8 @@
       top: 50%;
       transform: translate(-50%, -50%);
       padding: 10px 20px;
-      background-color: #337ab7;
-      color: #fff;
+      background-color: #ff0000;
+      color: #000000;
       border: none;
       cursor: pointer;
     }
@@ -30,8 +32,8 @@
       top: 40%;
       transform: translateX(-50%);
       padding: 10px 20px;
-      background-color: #337ab7;
-      color: #fff;
+      background-color: #00ff2f;
+      color: #000000;
       border: none;
       cursor: pointer;
     }
@@ -46,12 +48,13 @@
       pointer-events: none;
     }
   </style>
+  
   <script>
     function getRandomPosition() {
       var screenWidth = window.innerWidth;
       var screenHeight = window.innerHeight;
 
-      var margin = 100; // Defina a margem desejada (valor maior)
+      var margin = 100;
 
       var randomX = Math.floor(Math.random() * (screenWidth - margin * 2)) + margin;
       var randomY = Math.floor(Math.random() * (screenHeight - margin * 2)) + margin;
@@ -68,17 +71,16 @@
     }
 
     function showAlert() {
-      alert("Você clicou no botão 'Sim'!");
+      alert("Pode ja passando esse cu pra ca😁");
     }
 
-    document.getElementById("sim").addEventListener("click", showAlert);
   </script>
 </head>
 <body>
   <div class="button-margin"></div>
   <div class="button-container">
-    <button id="sim" class="static-button" onclick="showAlert()">Sim</button>
-    <button id="myButton" class="button" onmouseover="moveButton()">Não</button>
+    <button id="sim" class="static-button" onclick="showAlert()"><strong>Sim</strong></button>
+    <button id="myButton" class="button" onmouseover="moveButton()"><strong>Não</strong></button>
   </div>
 </body>
 </html>
