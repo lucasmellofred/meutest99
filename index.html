@@ -51,10 +51,16 @@
     function moveButton() {
       var button = document.getElementById('myButton');
       var randomPosition = getRandomPosition();
-
+    
       button.style.left = randomPosition.x + 'px';
       button.style.top = randomPosition.y + 'px';
     }
+    
+    function showAlert() {
+      alert("Você clicou no botão 'Sim'!");
+    }
+
+    document.getElementById("sim").addEventListener("click", showAlert);
   </script>
 </head>
 <body>
