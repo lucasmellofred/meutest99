@@ -35,6 +35,16 @@
       border: none;
       cursor: pointer;
     }
+
+    .button-margin {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 200px;
+      height: 200px;
+      pointer-events: none;
+    }
   </style>
   <script>
     function getRandomPosition() {
@@ -65,6 +75,7 @@
   </script>
 </head>
 <body>
+  <div class="button-margin"></div>
   <div class="button-container">
     <button id="sim" class="static-button" onclick="showAlert()">Sim</button>
     <button id="myButton" class="button" onmouseover="moveButton()">Meu Botão</button>
